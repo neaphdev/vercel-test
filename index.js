@@ -16,7 +16,7 @@ app.post("/login", (req, res) => {
     const sleepTime = Math.random() * 400;
 
     setTimeout(() => {
-        res.send({ token: token });
+        res.send({ token: token, time: sleepTime});
     }, sleepTime);
 });
 
