@@ -13,7 +13,7 @@ app.post("/login", (req, res) => {
     const token = crypto.randomBytes(64).toString('hex');
 
     // Random sleep time up to 1 second
-    const sleepTime = Math.random() * 1000;
+    const sleepTime = Math.random() * 400;
 
     setTimeout(() => {
         res.send({ token: token });
